@@ -1,0 +1,7 @@
+{
+  "name": "noyan-rate-",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
