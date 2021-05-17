@@ -8,13 +8,15 @@ import { HomePageRoutingModule } from './home-routing.module';
 import {NgbRatingModule,} from '@ng-bootstrap/ng-bootstrap';
 // import { Ngbra } from '@ng-bootstrap/ng-bootstrap';
 
+import { MyModalPageModule } from '../rating-modal/rating-modal.module';
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
         IonicModule,
         HomePageRoutingModule,
-        NgbRatingModule
+        NgbRatingModule,
+
     ],
   declarations: [HomePage]
 })

@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="msnp">
     <ion-title>
       Rating
     </ion-title>
@@ -27,7 +27,9 @@
         <ng-template #t let-fill="fill"><span class="star" [class.full]="fill === 100"><span class="half" [style.width.%]="fill">★</span>★</span>
         </ng-template>
 
-        <ion-button id="rate-submit-button" size="small" (click)="rateSubmit()">ثبت نظر</ion-button>
+        <ion-button id="rate-submit-button" size="small" (click)="presentModal()">
+        ثبت نظر</ion-button>
+
 
         <div id="star-rate-box">
 

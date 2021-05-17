@@ -1,22 +1,11 @@
-<ion-header>
-  <ion-toolbar color="danger">
-    <ion-title>my-modal</ion-title>
+<ion-header size="small">
+  <ion-toolbar size="small" color="warning">
+    <ion-title size="small" style="text-align: right ">نظر خود را وارد کنید</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-
-  <ion-grid>
-    <ion-row>
-      <ion-col text-center>
-        ID : {{modelId}}
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col text-center>
-        <ion-button (click)="closeModal()">Close Modal</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
+  <ng-template #t let-fill="fill"><span class="star" [class.full]="fill === 100"><span class="half" [style.width.%]="fill">★</span>★</span>
+  </ng-template>
+  <ngb-rating [resettable]="true" [rate]="0" [starTemplate]="t" [readonly]="false" [max]="5" (leave)="(hovered=0)"></ngb-rating>
 </ion-content>
