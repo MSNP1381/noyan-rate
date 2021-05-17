@@ -1,27 +1,51 @@
-#container {
-  text-align: center;
+.star {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  color: #d3d3d3;
+}
 
+.full {
+  color: gold;
+}
+
+.half {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  display: inline-block;
+  overflow: hidden;
+  color: gold;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+//ion-card{position: relative}
+#rate-box {
+
+  position: relative;
+  text-align: right;
+  padding-bottom: 27px;
+
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+#star-rate-box {
+  position: absolute;
+  right: 5px;
+top:var(--vertcal2);
+}
+:root{  --vertcal2:0;}
+#rate-submit-button {
+  position: absolute;
+  left: 10px;
 
-  color: #8c8c8c;
 
-  margin: 0;
+
 }
 
-#container a {
-  text-decoration: none;
+b {
+  padding-right: 5px;
+  padding-bottom: 3px
 }
+
+#store-name {
+  position: absolute;
+  right: 3px;
+}
+

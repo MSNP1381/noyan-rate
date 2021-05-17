@@ -24,3 +24,10 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@font-face {
+  font-family: 'IranYekan';    //This is what we are going to call
+  src: url('./assets/IRANYekanMobileLight.ttf');
+}
+button{
+  font-family: 'IranYekan', serif}
+

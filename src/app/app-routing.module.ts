@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'rating-modal',
+    loadChildren: () => import('./rating-modal/rating-modal.module').then( m => m.RatingModalPageModule)
+  },
 ];
 
 @NgModule({
